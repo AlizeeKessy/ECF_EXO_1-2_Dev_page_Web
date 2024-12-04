@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../font/Pacifico.ttf');
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding-block: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-left: 50px;
+    margin-right: 20px; */
+}
+
+.h1-header {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Pacifico';
+    font-size: 50px;
+    color: #4cd84c;
+    /* margin-left: 39px;
+    margin-right: 156px; */
+}
+
+
+.sect-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#navbar1 {
+    padding: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Styliser la barre de navigation supérieure*/
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+
+/* Styliser les liens de la barre de navigation */
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Changer la couleur sur le hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.greenBG {
+    margin: 0px;
+    background-color: #4cd84c;
+}
+
+#h1-main {
+    padding-left: 20px;
+    padding-block: 10px;
+    font-family: 'Pacifico';
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#p1-main {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-block: 10px;
+    color: #000000;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ddd;
+}
+
+/* Footer */
+.footer-div {
+    display: flex;
+    flex-wrap: row;
+    justify-content: right;
+    text-align: center;
+
+}
+
+.a-footerdiv1 {
+    padding-right: 4%;
+}
+
+.a-footerdiv2 {
+    padding-right: 2%;
+}
+
+/*Disposition réactive : lorsque l'écran fait moins entre 768-600px de large, empilez les deux colonnes l'une sur l'autre plutôt que l'une à côté de l'autre. */
+@media screen and (max-width: 768px) and (min-width: 600px){
+
+    .row,
+    .navbar {
+        flex-direction: column;
+    }
+
+    .row,
+    main {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px){
+
+    .column,
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section.section-main1 {
+        width: 228%;
+    }
+
+}
